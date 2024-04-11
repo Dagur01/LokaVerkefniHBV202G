@@ -1,43 +1,34 @@
 package vinnsla;
 
+import is.vinnsla.Lag;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class LagTest {
-
-    private String nafn = "test";
-    private String media = "media";
-    private int lengd = 1;
-    private String mynd = "mynd";
+    private Lag lag;
 
     @Test
-    public void testToString(){
-        this.nafn="test";
-        assertTrue(nafn.equals("test"));
+    public void testConstructorAndGetters() {
+        String expectedMedia = "path/to/media";
+        String expectedMynd = "image.jpg";
+        String expectedNafn = "Song Name";
+        int expectedLengd = 300;
+
+        Lag lag = new Lag(expectedMedia, expectedMynd, expectedNafn, expectedLengd);
+
+        assertEquals(expectedMedia, lag.getMedia(), "Media should match the input value");
+        assertEquals(expectedMynd, lag.getMynd(), "Mynd should match the input value");
+        assertEquals(expectedNafn, lag.getNafn(), "Nafn should match the input value");
+        assertEquals(expectedLengd, lag.getLengd(), "Lengd should match the input value");
     }
 
     @Test
-    public void testGetMedia() {
-        assertTrue(media.equals("media"));
-    }
+    public void testToString() {
+        String expectedName = "Song Name";
+        Lag lag = new Lag("path/to/media", "image.jpg", expectedName, 300);
 
-    @Test
-    public void testGetNafn(){
-        assertTrue(nafn.equals("test"));
-    }
-
-    @Test
-    public void testGetMynd(){
-        assertTrue(mynd.equals("mynd"));
-    }
-
-    @Test
-    public void testGetLengd(){
-        assertTrue(lengd==1);
-        assertFalse(lengd!=1);
-
+        assertEquals(expectedName, lag.toString(), "toString should return the correct name");
     }
 
 }
