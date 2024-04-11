@@ -16,7 +16,7 @@ public class Lagalistar {
     public static final String NAFN = "listi";
     private static int index; // index á núverandi lagalista
 
-    private static final Lagalisti[] listar = new Lagalisti [2]; // lagalistar
+    public static final Lagalisti[] listar = new Lagalisti [2]; // lagalistar
 
     /**
      * Setur upp lagalistana. Les innihald þeirra úr skrám sem heita listi1.dat listi2.dat o.s.frv.
