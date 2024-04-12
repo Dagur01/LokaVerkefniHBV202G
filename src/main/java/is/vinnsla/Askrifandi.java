@@ -1,8 +1,5 @@
 package is.vinnsla;
 /******************************************************************************
- *  Nafn    : Dagbjört
- *  T-póstur: ebba@hi.is
- *  Viðmótsforritun 2024
  *
  * Vinnsluklasi fyrir áskrfianda. Hefur nafn
  *****************************************************************************/

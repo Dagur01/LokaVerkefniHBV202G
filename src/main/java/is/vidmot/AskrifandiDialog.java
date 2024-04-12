@@ -1,8 +1,5 @@
 package is.vidmot;
 /******************************************************************************
- *  Nafn    : Ebba Þóra Hvannberg
- *  T-póstur: ebba@hi.is
- *  Viðmótsforritun 2024
  *
  *  Dialog modal til að fá nafn áskrifanda
  *

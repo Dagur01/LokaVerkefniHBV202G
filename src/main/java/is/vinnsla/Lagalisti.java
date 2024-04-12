@@ -1,9 +1,5 @@
 package is.vinnsla;
 /******************************************************************************
- *  Nafn    : Dagur
- *  T-póstur: ebba@hi.is
- *  Viðmótsforritun 2024
- *
  * Vinnsluklasi fyrir lagalista. Lagalisti getur haft lista af Lag
  * Heldur utan um núverandi lag
  *

@@ -1,10 +1,7 @@
 package is.vinnsla;
 
 /******************************************************************************
- *  Nafn    : Dagur
- *  T-póstur: ebba@hi.is
- *  Viðmótsforritun 2024
- *
+
  *  Vinnsluklasi fyrir Lag. Hefur nafn, lengd, mynd og media (skráaslóð) fyrir lagið
  *****************************************************************************/
 
