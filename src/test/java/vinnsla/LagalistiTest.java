@@ -36,7 +36,7 @@ public class LagalistiTest {
     @Test
     public void testLesaLog() throws IOException {
         System.out.println (System.getProperty("user.dir"));
-        File file = new File (System.getProperty("user.dir")+"/src/main/resources/is/vinnsla/"+nafnASkra);
+        File file = new File (System.getProperty("user.dir")+"/src/main/resources/is/vinnsla/");
         Scanner scanner = new Scanner(file, StandardCharsets.UTF_8);
         String [] lina;
         try {
