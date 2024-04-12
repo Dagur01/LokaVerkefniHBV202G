@@ -24,32 +24,16 @@ public class LagalistiTest {
 
     private Lagalisti lagalisti = new Lagalisti();
     protected ObservableList<Lag> listi = FXCollections.observableArrayList();
-
-    @Rule
     public TemporaryFolder folder = new TemporaryFolder();
 
-    @Before
+
     public void setUp() {
         lagalisti = new Lagalisti();
     }
 
     @Test
     public void testLesaLog() throws IOException {
-        System.out.println (System.getProperty("user.dir"));
-        File file = new File (System.getProperty("user.dir")+"/src/main/resources/is/vinnsla/");
-        Scanner scanner = new Scanner(file, StandardCharsets.UTF_8);
-        String [] lina;
-        try {
-            // lesa gögn ur skrá og búa til Lag hlut
-            while (scanner.hasNextLine()) {
-
-                lina = scanner.nextLine().split(" ");
-                listi.add(new Lag (lina[0], lina [3], lina[1], Integer.parseInt(lina[2])));
-            }
-            scanner.close();
-        }catch (RuntimeException e) {
-            e.printStackTrace();
-        }
+        setUp();
 
         File testFile = folder.newFile("testSongs.txt");
         try (PrintWriter out = new PrintWriter(testFile, StandardCharsets.UTF_8.name())) {
@@ -75,6 +59,7 @@ public class LagalistiTest {
 
     @Test
     public void testNaesti() {
+        setUp();
         lagalisti.getListi().addAll(new Lag("path1", "image1.jpg", "Song1", 300),
                 new Lag("path2", "image2.jpg", "Song2", 200));
 
