@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class LagTest {
-    private Lag lag;
 
     @Test
     public void testConstructorAndGetters() {

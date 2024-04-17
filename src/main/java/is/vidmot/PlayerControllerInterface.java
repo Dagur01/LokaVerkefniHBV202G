@@ -1,9 +1,4 @@
 package is.vidmot;
-/******************************************************************************
- *
- *  ónotað - aðeins notað til að sýna nemendum API fyrir klasann
- *
- *****************************************************************************/
 
 import javafx.event.ActionEvent;
 

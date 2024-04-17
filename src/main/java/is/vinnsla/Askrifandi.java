@@ -1,6 +1,5 @@
 package is.vinnsla;
 /******************************************************************************
- *
  * Vinnsluklasi fyrir áskrfianda. Hefur nafn
  *****************************************************************************/
 import javafx.beans.property.SimpleStringProperty;
