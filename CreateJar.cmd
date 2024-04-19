@@ -1,1 +1,1 @@
-jar -c -m ../Manifest.mf -f ../loka.jar
+jar -c -m ../MANIFEST.MF -f ../myjar.jar *
