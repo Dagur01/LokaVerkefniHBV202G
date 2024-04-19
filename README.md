@@ -1,5 +1,5 @@
 # Lokaverkefni HBV202G
-
+Verkefnið heitir AudioPlayer og hægt er að skrá sig inn og hlusta á lög.
 
 **Note that the POM includes version 4.11 of JUnit 4 which has a vulnerability:** while the vulnerable rule (see https://www.cve.org/CVERecord?id=CVE-2020-15250) is not used, it is part of the assignment to **update the version to 4.13.2**.
 
