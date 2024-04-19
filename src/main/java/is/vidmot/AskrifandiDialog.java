@@ -56,7 +56,6 @@ public class AskrifandiDialog extends Dialog<Askrifandi> {
      * @return
      */
     private DialogPane lesaDialog() {
-
         FXMLLoader fxmlLoader = new FXMLLoader(AskrifandiDialog.class.getResource(View.ASKRIFANDI.getFileName()));
         try {
             fxmlLoader.setController(this); // setur þennan hlut sem controller
@@ -64,6 +63,5 @@ public class AskrifandiDialog extends Dialog<Askrifandi> {
         } catch (IOException exception) {
             throw new RuntimeException(exception);
         }
-
     }
 }
